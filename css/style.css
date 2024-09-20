@@ -1,0 +1,135 @@
+section,
+header,
+nav,
+article,
+aside,
+footer {
+    display: block;
+}
+
+.left,
+.content {
+    position: absolute;
+    overflow: auto;
+    padding: 10px;
+}
+
+.header {
+    height: 80px;
+    background-color: bisque;
+    border-bottom: 2px solid #7b5427;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24pt;
+}
+
+.content {
+    top: 82px;
+    left: 180px;
+    bottom: 0;
+    right: 0;
+}
+
+.left {
+    width: 150px;
+    background-color: #ecf5e4;
+    border-right: 1px solid #231f20;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+.block {
+    background-color: azure;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* border: 2px solid #0066ff; */
+    background-color: #33adff;
+}
+
+.menu a {
+    background-color: #ecf5e4;
+    color: #777;
+    font-weight: 400;
+    /* border-left: 5px solid #33adff; */
+    display: inline-block;
+    padding: 5px 10px;
+    width: 100px;
+    /* border-bottom: 1px solid #231f20; */
+}
+
+.menu li {
+    padding: 1px;
+    display: inline;
+}
+
+.menu a:hover {
+    background-color: yellow;
+    color: red;
+    border-left: 1px solid #3333ff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+}
+
+.content-block {
+    background-color: #c92929;
+}
+
+.content-block-auto {
+    width: 200px;
+    background-color: #abfbf3;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container-inline {
+    text-align: center;
+    border: 2px solid blue;
+}
+
+.content-inline-block {
+    display: inline-block;
+    border: 2px solid red;
+}
+
+.rounded {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px #999;
+}
+
+.on-bg {
+    /* background-image: url("../images/fon.jpg"); */
+    height: 200px;
+    background-color: rgba(255, 128, 64, .99);
+    /* background-repeat: repeat-x; */
+}
+
+.on-gradient {
+    background: linear-gradient(to right, #abfbf3, #fff);
+    height: 200px;
+}

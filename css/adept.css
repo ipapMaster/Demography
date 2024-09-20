@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 100px;
+}
+
+aside,
+main {
+    width: 100%;
+}
+
+aside {
+    background-color: #e46c0a;
+}
+
+main {
+    background-color: #2e9aff;
+}
+
+@media screen and (min-width: 1400px) {
+    aside {
+        flex: 0 0 25%;
+        max-width: 25%;
+        order: 1;
+    }
+    main {
+        flex: 0 0 75%;
+        max-width: 75%;
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    aside {
+        /*<flex-grow> <flex-shrink> <flex-basis>*/
+        flex: 0 0 35%;
+        max-width: 35%;
+        order: 1;
+    }
+    main {
+        flex: 0 0 65%;
+        max-width: 65%;
+        order: 2;
+    }
+}
