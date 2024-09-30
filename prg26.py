@@ -13,4 +13,4 @@ temp = remove_incorrect | digits
 temp = list(temp)
 
 for i in range(6):
-    print(temp[i], end='') # [] - обратиться по индексу
+    print(temp[i], end='')  # [] - обратиться по индексу
