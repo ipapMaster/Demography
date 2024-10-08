@@ -6,16 +6,16 @@ from functions import *
 def main():
     # Глобальные
     try:
-        first = input('Введите первое число: ')
-        second = input('Введите второе число: ')
-        # Завтра продолжим
+        first = float(input('Введите первое число: '))
+        second = float(input('Введите второе число: '))
 
         print(summ(first, second))
         print(sub(first, second))
         print(divide(first, second))
         print(multiply(first, second))
-    except:
-        pass
+    except ValueError:
+        print('Работаю только с числами')
+        return
 
 
 # Если это главный исполняемый модуль

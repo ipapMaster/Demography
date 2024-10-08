@@ -10,6 +10,10 @@ def summ(a, b):
     """
     try:
         res = a + b
+        temp = int(res)
+        diff = res - temp
+        if diff == 0:
+            res = int(res)
     except TypeError:
         return 'Складываю только числа'
     else:
